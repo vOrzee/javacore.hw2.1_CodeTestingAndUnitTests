@@ -40,7 +40,3 @@ jobs:
       with:
           name: jacoco_reports
           path: build/reports/jacoco/test/html
-
-      with:
-          name: jacoco_reports
-          path: build/reports/jacoco/test/html
