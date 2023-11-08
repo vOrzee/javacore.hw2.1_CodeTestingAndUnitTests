@@ -7,12 +7,12 @@ public class WallService {
     private static int counter = 0;
     private static List<Post> posts = new ArrayList<>();
 
-    public static Post add (Post post) {
+    public static Post add(Post post) {
         posts.add(new Post(++counter, post.getOwnerId(), post.getText()));
         return posts.get(posts.size() - 1);
     }
 
-    public static Boolean update (Post post) {
+    public static Boolean update(Post post) {
         for (Post value : posts) {
             if (post.getId() == value.getId() && post.getOwnerId() == value.getOwnerId()) {
                 value.setText(post.getText());
